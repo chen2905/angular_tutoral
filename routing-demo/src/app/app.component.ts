@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- public title = 'Thanks! Mighty GOD!';
-  public messageFromChild ='';
+  title = 'routing-deom';
 }

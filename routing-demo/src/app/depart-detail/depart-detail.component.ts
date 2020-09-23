@@ -57,4 +57,4 @@ export class DepartDetailComponent implements OnInit {
 
 
   }
-}
+} 

@@ -1,42 +1,55 @@
 [
   {
     "Id":1,
+    "SellRent":1,
     "Name": "Chen House",
     "Type":"House",
-    "Price":120000
+    "Price":120000,
+    "Image":"prop-1"
   },
   {
     "Id":2,
+    "SellRent":2,
     "Name": "Bruce House",
     "Type":"Apartment",
-    "Price":54000
+    "Price":54000,
+    "Image":"prop-2"
   },
   {
     "Id":3,
+    "SellRent":1,
     "Name": "Amanda House",
     "Type":"House",
-    "Price":37000
+    "Price":37000,
+    "Image":"prop-3"
   },
   {
     "Id":4,
+    "SellRent":2,
     "Name": "Jonn House",
     "Type":"House",
-    "Price":150000
+    "Price":150000,
+    "Image":"prop-4"
   },
   {
     "Id":5,
+    "SellRent":1,
     "Name": "Nikko House",
     "Type":"House",
-    "Price":56000
+    "Price":56000,
+    "Image":"prop-5"
   },
   {
     "Id":6,
+    "SellRent":2,
     "Name": "Manoj House",
     "Type":"House",
-    "Price":84000
+    "Price":84000,
+    "Image":"prop-6"
   },
   {
-    "Id":6,
+    "Id":7,
+    "SellRent":1,
     "Name": "Krishna House",
     "Type":"House",
     "Price":75000

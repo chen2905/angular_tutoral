@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router'
 @Component({
   selector: 'app-add-property',
@@ -6,12 +6,16 @@ import { Router } from '@angular/router'
   styleUrls: ['./add-property.component.css']
 })
 export class AddPropertyComponent implements OnInit {
-
+  @ViewChild('Form') addPropertyForm /*this is the way to view form values before submitting the form */
   constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
-  onBack(){
-    this.router.navigate(['/']);
+
+  onSubmit(){
+    //console.log('form.name?', Form);
   }
+  // onBack(){
+  //   this.router.navigate(['/']);
+  // }
 }

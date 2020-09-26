@@ -10,23 +10,22 @@ import { ActivatedRoute } from '@angular/router'
 })
 export class PropertyListComponent implements OnInit {
 
-  SellRent =1;
+  SellRent = 1;
   properties: IProperty[] ;
 
   constructor(private route:ActivatedRoute,private housingService: HousingService){ }
 
   ngOnInit(): void {
 
-    if (this.route.snapshot.url.toString()==="rent-property"){
-      this.SellRent =2;
+    if (this.route.snapshot.url.toString() === "rent-property"){
+      this.SellRent = 2;
     }
    this.housingService.getAllProperties(this.SellRent).subscribe(
      data => {
        this.properties = data;
        console.log("route", this.route.snapshot.url.toString())
-
-      }, error => {
-        console.log('httperror:',error)
+     }, error => {
+        console.log('httperror:', error)
      }
    )
   }

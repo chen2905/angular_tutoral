@@ -13,8 +13,13 @@ import { AddPropertyComponent } from './property/add-property/add-property.compo
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
-
-
+import { UserService } from './services/user.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+// RECOMMENDED
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 const appRoutes: Routes = [
 
   {
@@ -57,11 +62,17 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
+    TabsModule.forRoot(),
+    ButtonsModule.forRoot(),
+    BsDatepickerModule.forRoot()
 
   ],
   providers: [
-    HousingService
+    HousingService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
